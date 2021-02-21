@@ -19,9 +19,9 @@ func main() {
 	}
 
 	// Acessando um valor
-  fmt.Println(aprovados[123456789])
+	fmt.Println(aprovados[123456789])
 
-  // Deletando um valor
-  delete(aprovados, 781781349)
-  fmt.Println(aprovados)
+	// Deletando um valor
+	delete(aprovados, 781781349)
+	fmt.Println(aprovados)
 }
