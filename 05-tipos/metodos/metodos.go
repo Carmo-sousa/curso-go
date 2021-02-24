@@ -14,6 +14,8 @@ func (p pessoa) getNomeCompleto() string {
 	return p.nome + " " + p.sobrenome
 }
 
+// Para modificar um parametro da struct, é preciso passar um ponteiro como
+// parametro do método.
 func (p *pessoa) setNomeCompleto(nomeCompleto string) {
 	partes := strings.Split(nomeCompleto, " ")
 	p.nome = partes[0]
