@@ -6,6 +6,10 @@ Repositório com todos os códigos do curso de Golang da Cod3r.
 - [Fundamentos](01-fundamentos)
 - [Controles](02-controles)
 - [Array, Slice e Map](03-arrayslicemap)
+- [Funções](04-funcoes)
+- [Tipos](05-tipos)
+- [Pacotes](06-pacotes)
+- [Concorrência](07-concorrencia)
 - [Anotações](#annotations)
 
 ## <a name=annotations><a/> Anotações
@@ -22,5 +26,3 @@ Concorrência viabiliza paralelismo.
 
 - É possível que a concorrência seja melhor que o paralelismo!
 - Paralelismo exige muito mais do *SO* e do *hardware*.
-
-## Teste2
