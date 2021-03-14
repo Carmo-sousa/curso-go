@@ -5,6 +5,8 @@ import (
 	"io/ioutil"
 	"net/http"
 	"regexp"
+
+	"github.com/Carmo-sousa/html"
 )
 
 // Google I/O 2012 - Go Concurrency Patterns
@@ -27,10 +29,10 @@ func titulo(urls ...string) <-chan string {
 }
 
 func main() {
-	t1 := titulo("https://www.google.com.br", "https://github.com/")
-	for ti := range t1 {
-		fmt.Println(ti)
-	}
+	t1 := html.Titulo("https://www.google.com.br", "https://github.com/")
+	t2 := titulo("https://www.google.com.br", "https://github.com/")
 	fmt.Println(<-t1)
 	fmt.Println(<-t1)
+	fmt.Println(<-t2)
+	fmt.Println(<-t2)
 }
